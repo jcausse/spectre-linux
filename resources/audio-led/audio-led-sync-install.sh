@@ -17,7 +17,7 @@ fi
 # * alsa-utils and alsa-tools are needed for hda-verb #
 #######################################################
 
-dnf install -y pulseaudio-utils alsa-utils alsa-tools wireplumber pipewire
+apt install -y pulseaudio-utils alsa-utils alsa-tools wireplumber pipewire
 
 mv ./$TARGET_SCRIPT_NAME /usr/local/bin/$TARGET_SCRIPT_NAME
 chmod +x /usr/local/bin/$TARGET_SCRIPT_NAME

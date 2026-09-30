@@ -2,7 +2,7 @@
 
 1. Install dependencies:
     ```bash
-    sudo dnf install -y alsa-utils alsa-tools
+    sudo apt install -y alsa-utils alsa-tools
     ```
 
 2. This command should turn the Speaker Mute LED on key F6 ON:
