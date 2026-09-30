@@ -5,7 +5,7 @@ Thanks to `aigilea` (see [this repo](https://github.com/aigilea/hp_spectre_x360_
 Run the following command (copy and paste it in your terminal as if it was a single line). It will download the service file, copy it to the systemd directory, enable and start it, and finally remove the downloaded file.
 
 ```bash
-wget https://raw.githubusercontent.com/jcausse/spectre-fedora/main/resources/palm-rejection.service -O palm-rejection.service && \
+wget https://raw.githubusercontent.com/jcausse/spectre-linux/main/resources/palm-rejection.service -O palm-rejection.service && \
 sudo cp palm-rejection.service /etc/systemd/system/ && \
 sudo systemctl enable palm-rejection.service && \
 sudo systemctl start palm-rejection.service && \

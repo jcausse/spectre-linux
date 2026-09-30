@@ -10,17 +10,17 @@ This solution fixes this without patching and recompiling any kernel modules, fo
 
 ### Pre-fix Test
 
-Before proceeding with the fix, it is important that you test the actual commands used to turn those LEDs on and off, to make sure they work on your machine. Read [this guide](https://github.com/jcausse/spectre-fedora/blob/main/guides/audio-mute-leds-test-commands.md) to perform those tests, and then return here.
+Before proceeding with the fix, it is important that you test the actual commands used to turn those LEDs on and off, to make sure they work on your machine. Read [this guide](https://github.com/jcausse/spectre-linux/blob/main/guides/audio-mute-leds-test-commands.md) to perform those tests, and then return here.
 
 * If those worked, you can continue.
-* Else, then I am afraid I can't help you any further until you figure out the exact commands. After you do, the scripts I made can still be used to fix this on your machine, given that you modify [this script](https://github.com/jcausse/spectre-fedora/blob/main/resources/audio-led/audio-led-sync.sh) to match the exact commands that worked for you.
+* Else, then I am afraid I can't help you any further until you figure out the exact commands. After you do, the scripts I made can still be used to fix this on your machine, given that you modify [this script](https://github.com/jcausse/spectre-linux/blob/main/resources/audio-led/audio-led-sync.sh) to match the exact commands that worked for you.
 
 ### Fix
 
 Run the following command (copy it and paste it in your terminal as a single line):
 
 ```bash
-wget https://raw.githubusercontent.com/jcausse/spectre-fedora/main/resources/audio-led/audio-led.tar.gz && \
+wget https://raw.githubusercontent.com/jcausse/spectre-linux/main/resources/audio-led/audio-led.tar.gz && \
 tar -xzf audio-led.tar.gz && mv ./audio-led/* . && \
 sudo chmod +x audio-led-sync-install.sh && sudo ./audio-led-sync-install.sh && rm -rf ./audio-led*
 ```
